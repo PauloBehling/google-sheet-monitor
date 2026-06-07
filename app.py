@@ -482,7 +482,7 @@ with st.sidebar:
     remaining_seconds = max(0, int(st.session_state.next_check_timestamp - time.time()))
     st.markdown(
         f"<div style='color:#7f8fb0;font-size:13px;text-align:center'>"
-        f"⏱️ Próxima consulta em <b style='color:#64ffda'>{remaining_seconds}s</b></div>",
+        f"⏱️ Próxima consulta em <h1><b style='color:#00000'>{remaining_seconds}s</b></h1></div>",
         unsafe_allow_html=True,
     )
     if st.session_state.last_check_time:
